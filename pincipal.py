@@ -1,6 +1,7 @@
 # principal con menu y opciones
 from el_json import*
-
+from funciones_json import*
+granListaPrincipal=[]
 boleanito= True
 while (boleanito):
 
