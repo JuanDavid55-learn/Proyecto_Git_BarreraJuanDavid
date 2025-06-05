@@ -7,13 +7,15 @@ losNuevosIngredientes=[]
 losingredientesTem=int(input("cuantos ingredientes son? - "))
 for i in range(losingredientesTem):
     losingredientesTem=str()
-    losNuevosIngredientes.append(losingredientesTem)
+    losNuevosIngredientes.append(losNuevosIngredientes)
     losingredientesTem()
 cantidadtTem= int(input("que catidad hay? - "))
 
-losNuevosIngredientes.append(losingredientesTem)
+editar=[]
 granListaPrincipal=datos
 for i in range(len(granListaPrincipal)):
     if (nombreTem==granListaPrincipal[i]["nombre"]):
         editar={"descripcion":descripcionTem,"precio":presioTem,"ingredientes":losNuevosIngredientes,"cantidad":cantidadtTem}
-        datosAgregar(editar)
+
+granListaPrincipal.append(editar)
+editar=[]
